@@ -1,0 +1,254 @@
+/* --- Estilos Base --- */
+:root {
+    --color-dark: #1a1a2e; /* Azul muy oscuro, casi negro */
+    --color-accent: #4a90e2; /* Azul bonito */
+    --color-light: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Barra de Navegación (Navbar) --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(0, 0, 0, 0.3); /* Transparencia sutil */
+    border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+}
+
+.nav-links a {
+    color: var(--color-light);
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent);
+}
+
+/* Botón Personal (Navbar) */
+.btn-personal {
+    background-color: transparent;
+    border: 2px solid var(--color-light);
+    color: var(--color-light);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-personal:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* --- Contenido Principal (Main) --- */
+.main-content {
+    flex-grow: 1; /* Para ocupar el espacio central */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.bot-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(74, 144, 226, 0.8); /* Brillo azul */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.description {
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: #bdbdbd;
+    margin-bottom: 40px;
+}
+
+/* Botones de Acción Centrales */
+.cta-buttons-center a {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-invite {
+    background-color: var(--color-accent); /* Azul Principal */
+    color: white;
+}
+
+.btn-invite:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.5);
+}
+
+.btn-support {
+    background-color: #7289da; /* Color Discord */
+    color: white;
+}
+
+.btn-support:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(114, 137, 218, 0.5);
+}
+
+/* Pie de Página */
+footer {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(74, 144, 226, 0.1);
+    color: #888;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/* --- Estilos Específicos para FAQ --- */
+.faq-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.faq-content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.faq-intro {
+    text-align: center;
+    color: #bdbdbd;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+.faq-container {
+    background-color: #1a1a2e; /* Fondo del contenedor (mismo color que el Dark-Blue del body) */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(74, 144, 226, 0.3); /* Línea divisoria azul suave */
+    padding: 20px 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none; /* Quitar línea en el último elemento */
+}
+
+.faq-question {
+    color: #00ffff; /* Color de acento para la pregunta */
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.faq-answer {
+    color: #bdbdbd;
+    line-height: 1.6;
+    margin-left: 25px; /* Pequeña indentación */
+}
+
+/* --- Estilos Específicos para Política de Privacidad --- */
+.privacy-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.privacy-content h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.privacy-date {
+    text-align: center;
+    color: #bdbdbd;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.policy-section {
+    background-color: #1a1a2e;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.policy-section h2 {
+    color: #00ffff; /* Color de acento para los títulos de sección */
+    font-size: 1.5rem;
+    margin-top: 0;
+    border-bottom: 2px solid rgba(74, 144, 226, 0.5);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.policy-section p, .policy-section li {
+    color: #bdbdbd;
+    line-height: 1.8;
+}
+
+.policy-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.policy-section li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.policy-section li:before {
+    content: "•";
+    color: #00ffff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.contact-link {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
